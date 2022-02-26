@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "251312738043",
+    "firebase_url": "https://journals-app-f4501-default-rtdb.firebaseio.com",
+    "project_id": "journals-app-f4501",
+    "storage_bucket": "journals-app-f4501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251312738043:android:c04ba4987138df8396aa5e",
+        "android_client_info": {
+          "package_name": "com.example.therehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251312738043-u5sg0la4349bbd8mtklmvseo8ufm9e2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmBENwgeMCqBUlwV_nAoU3r4wMKRvZtOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251312738043-u5sg0la4349bbd8mtklmvseo8ufm9e2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251312738043:android:6b405c03f1c3eb6d96aa5e",
+        "android_client_info": {
+          "package_name": "com.kyu.therehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251312738043-u5sg0la4349bbd8mtklmvseo8ufm9e2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmBENwgeMCqBUlwV_nAoU3r4wMKRvZtOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251312738043-u5sg0la4349bbd8mtklmvseo8ufm9e2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

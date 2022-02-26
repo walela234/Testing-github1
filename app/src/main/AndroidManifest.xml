@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kyu.therehub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/p"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/repoot"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheRehub"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArchitectureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LandEconomics"
+            android:exported="false" />
+        <activity
+            android:name=".Building_EconomicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Register_Lecturer"
+            android:exported="false" />
+        <activity
+            android:name=".ViewReport"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceReports"
+            android:exported="false" />
+        <activity
+            android:name=".Selection_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Selection_checking"
+            android:exported="false" />
+        <activity
+            android:name=".Choose_you"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

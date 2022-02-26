@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kyu.therehub.Login_Activity">
+    <EditText
+        android:id="@+id/namelogin"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/ic_baseline_import_contacts_24"
+        android:drawablePadding="12dp"
+        android:textColor="@color/green"
+        android:hint="user name"
+        android:textColorHint="@color/green"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableLeft="@drawable/ic_baseline_import_contacts_24" />
+    <EditText
+        android:id="@+id/passwordl"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@id/namelogin"
+        android:textColor="@color/green"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/ic_passwordfocused"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:textColorHint="@color/green"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableLeft="@drawable/ic_passwordfocused" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/Login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordl"
+        android:text="LOGIN"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/igotno"
+        android:text="Have no account?"
+        android:textColor="@color/green"
+        android:layout_marginLeft="65dp"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/Login_btn"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regredirect"
+        android:text="REGISTER"
+        android:textColor="@color/green"
+        android:layout_marginLeft="35dp"
+        android:textSize="16sp"
+        android:layout_below="@id/Login_btn"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/igotno"
+        android:layout_marginStart="25dp"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:outlineAmbientShadowColor="@color/green"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:layout_below="@id/regredirect"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

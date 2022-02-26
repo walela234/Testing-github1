@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/my_drawer_layout"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kyu.therehub.Choose_you">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Select category:"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:id="@+id/what_you"
+            android:textSize="27sp"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/grid"
+            android:background="@color/white"
+            android:layout_below="@id/what_you"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:rowCount="1"
+            android:columnCount="2">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="35dp"
+                android:id="@+id/card1"
+                app:cardBackgroundColor="@color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:id="@+id/relative_1">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/app_image"
+                        android:background="@color/white"
+                        android:layout_marginTop="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_class_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/app_txt"
+                        android:layout_below="@id/app_image"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="LECTURER"
+                        android:textColor="@color/green"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_centerInParent="true"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="35dp"
+                android:id="@+id/card2"
+                app:cardBackgroundColor="@color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:id="@+id/relative_2">
+
+                    <ImageView
+                        android:id="@+id/up_image"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:background="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/ic_baseline_people_outline_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/up_txt"
+                        android:textColor="@color/green"
+                        android:layout_below="@id/up_image"
+                        android:layout_marginTop="10dp"
+                        android:text="STUDENT"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_centerInParent="true"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+    </RelativeLayout>
+
+
+
+
+    <!--this the navigation view which draws
+     and shows the navigation drawer-->
+    <!--include the menu created in the menu folder-->
+
+</RelativeLayout>

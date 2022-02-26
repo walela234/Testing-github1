@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.kyu.therehub.PlaceReports">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_edit_text_cut"
+            android:drawableStart="@drawable/ic_nanme"
+            android:hint="pdf name"
+            android:textColorHint="@color/green"
+            android:paddingStart="12dp"
+            android:textColor="@color/green"
+            android:paddingEnd="12dp"
+            android:drawableLeft="@drawable/ic_nanme" />
+
+        <ImageView
+            android:id="@+id/uploadpdf"
+            android:layout_width="185dp"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_cloud_upload_24" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/green"
+        android:text="UPLOAD PDF" />
+
+    <Button
+        android:id="@+id/pdflist"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/green"
+        android:text="ALL PDF LIST" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:outlineAmbientShadowColor="@color/green"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"/>
+
+
+</LinearLayout>

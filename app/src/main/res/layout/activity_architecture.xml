@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyu.therehub.Selection_Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/make_upload"
+        android:text="ARCHITECTURE"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/green"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="160dp"
+        android:id="@+id/grid"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
+        android:columnCount="2">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="35dp"
+            android:id="@+id/card1"
+            app:cardBackgroundColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/app_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/repoot"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/app_txt"
+                    android:layout_below="@id/app_image"
+                    android:layout_marginTop="10dp"
+                    android:text="REPORTS"
+                    android:textColor="@color/green"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="35dp"
+            android:id="@+id/card2"
+            app:cardBackgroundColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_2">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/up_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ou"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/up_txt"
+                    android:textColor="@color/green"
+                    android:layout_below="@id/up_image"
+                    android:layout_marginTop="10dp"
+                    android:text="JOURNALS"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="35dp"
+            android:id="@+id/card3"
+            app:cardBackgroundColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_3">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/res_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/proposals"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/res_txt"
+                    android:layout_below="@id/res_image"
+                    android:layout_marginTop="25dp"
+                    android:text="PROPOSALS"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/green"
+                    android:layout_centerInParent="true"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="35dp"
+            android:id="@+id/card4"
+            app:cardBackgroundColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_4">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/faqs_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/notesss"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faqs_txt"
+                    android:textColor="@color/green"
+                    android:layout_below="@id/faqs_image"
+                    android:layout_marginTop="10dp"
+                    android:text="NOTES"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+
+</RelativeLayout  >
